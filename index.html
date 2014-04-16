@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- Library Scripts -->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.0.1.min.css" />
+		<script src="lib/jquery-1.6.4.min.js">
+		</script>
+		<script src="lib/phonegap-1.4.1.js">
+		</script>
+		<script src="lib/jquery.mobile-1.0.1.min.js">
+		</script>
+		<!-- Application Scripts -->
+		<link rel='stylesheet' href='index.css' />
+		<script type='text/javascript' src='index.js'>
+		</script>
+	</head>
+	<body>
+		<div id='index' data-role='page'>
+			<div id='wrapper'>
+				<div data-role='header'>
+					<h1>美渥尚品</h1>
+				</div>
+				<!-- /header -->
+				<div id='content' data-role='content'>
+					<div id='sidebar'>
+						<ul data-role="listview" data-inset="true" data-theme='c'>
+							<li>
+								<a href='index.html' id='nav_1' sid='1' class='nav' screen='screen_1'>选购目的</a>
+							</li>
+							<li>
+								<a href='index.html' id='nav_2' sid='2' class='nav' screen='screen_2'>基本信息</a>
+							</li>
+							<li>
+								<a href='index.html' id='nav_3' sid='3' class='nav' screen='screen_3'>睡眠体验</a>
+							</li>
+							<li>
+								<a href='index.html' id='nav_4' sid='4' class='nav' screen='screen_4'>睡伴相关</a>
+							</li>
+							<li>
+								<a href='index.html' id='nav_5' sid='5' class='nav' screen='screen_5'>身体状况</a>
+							</li>
+							<li>
+								<a href='index.html' id='nav_6' sid='6' class='nav' screen='screen_6'>环境影响</a>
+							</li>
+							<li>
+								<a href='index.html' id='nav_7' sid='7' class='nav' screen='screen_7'>价格区间</a>
+							</li>
+						</ul>
+						<a id='search' data-role="button" data-icon="search" data-corners='false'>搜寻</a>
+						<a id='search' data-role="button" data-icon="star" data-corners='false'>我的收藏</a>
+					</div>
+					<div id='main'>
+						<div id='arrow'>
+							<div id='arrow_inner'>
+							</div>
+						</div>
+						<!--=====================================================-->
+						<div id='screen_1' class='screen' style='background-image: url(img/screen_1_bg.png);'>
+							<div class='screen_title'>
+								用途
+							</div>
+							<div class='screen_tooltip'>
+								如果选择“客房”将直接跳转到“价格区间”选项
+							</div>
+							<div id='purpose' class='screen_btnset'>
+								<img id='livingroom' category='purpose' class='screen_btn' src='img/livingroom.png'>
+								<img id='bedroom' category='purpose' class='screen_btn' src='img/bedroom.png'>
+							</div>
+						</div>
+						<!--------------------------------------------------------->
+						<div id='screen_2' class='screen' style='background-image: url(img/screen_2_bg.png);'>
+							<div data-role="navbar">
+								<ul>
+									<li>
+										<a href="#" class="tabnav ui-btn-active" tab='tab_21'>性别、身高、年龄</a>
+									</li>
+									<li>
+										<a href="#" class='tabnav' tab='tab_22'>体重、体型</a>
+									</li>
+								</ul>
+							</div>
+							<div id='tab_21' tid='21' class='tab'>
+								<div class='screen_title'>
+									性别
+								</div>
+								<div id='sex' class='screen_btnset'>
+									<img id='female' category='sex' class='screen_btn' src='img/female.png'>
+									<img id='male' category='sex' class='screen_btn' src='img/male.png'>
+								</div>
+								<div class='screen_title'>
+									身高
+								</div>
+								<div id='height' class='screen_choiceset'>
+									<img category='height' class='screen_choice' src='img/height.png'>
+								</div>
+								<div class='screen_title'>
+									年龄
+								</div>
+								<div id='age' class='screen_choiceset'>
+									<img category='age' class='screen_choice' src='img/age.png'>
+								</div>
+							</div>
+							<!----------------------------------------------------->
+							<div id='tab_22' tid='22' class='tab' style='display:none;'>
+								<div class='screen_title'>
+									体重
+								</div>
+								<div id='weight' class='screen_btnset'>
+									<img category='weight' class='screen_choice' src='img/weight.png'>
+								</div>
+								<div class='screen_title'>
+									体型
+								</div>
+								<div id='shape' class='screen_btnset'>
+									<img id='shape_1' category='shape' class='screen_btn' src='img/shape_1.png'>
+									<img id='shape_2' category='shape' class='screen_btn' src='img/shape_2.png'>
+									<img id='shape_3' category='shape' class='screen_btn' src='img/shape_3.png'>
+									<img id='shape_4' category='shape' class='screen_btn' src='img/shape_4.png'>
+								</div>
+							</div>
+						</div>
+						<!--------------------------------------------------------->
+						<div id='screen_3' class='screen' style='background-image: url(img/screen_3_bg.png);'>
+							<div data-role="navbar">
+								<ul>
+									<li>
+										<a href="#" class="tabnav ui-btn-active" tab='tab_31'>睡姿、睡眠温度</a>
+									</li>
+									<li>
+										<a href="#" class='tabnav' tab='tab_32'>使用频率、床垫类型</a>
+									</li>
+								</ul>
+							</div>
+							<div id='tab_31' tid='11' class='tab'>
+								<div class='screen_title'>
+									睡姿
+								</div>
+								<div id='gesture' class='screen_btnset'>
+									<img id='gesture_1' category='gesture' class='screen_btn' src='img/gesture_1.png'>
+									<img id='gesture_2' category='gesture' class='screen_btn' src='img/gesture_2.png'>
+									<img id='gesture_3' category='gesture' class='screen_btn' src='img/gesture_3.png'>
+								</div>
+								<div class='screen_title'>
+									睡眠温度
+								</div>
+								<div id='body_temp' class='screen_btnset'>
+									<img id='body_temp_1' category='body_temp' class='screen_btn' src='img/body_temp_1.png'>
+									<img id='body_temp_2' category='body_temp' class='screen_btn' src='img/body_temp_2.png'>
+									<img id='body_temp_3' category='body_temp' class='screen_btn' src='img/body_temp_3.png'>
+								</div>
+							</div>
+							<!----------------------------------------------------->
+							<div id='tab_32' tid='32' class='tab' style='display:none;'>
+								<div class='screen_title'>
+									使用频率
+								</div>
+								<div id='frequency' class='screen_choiceset'>
+									<img category='frequency' class='screen_choice' src='img/frequency.png'>
+								</div>
+								<div class='screen_title'>
+									床垫类型
+								</div>
+								<div id='type' class='screen_btnset'>
+									<img id='type_1' category='img' class='screen_btn' src='img/type_1.png'>
+									<img id='type_2' category='img' class='screen_btn' src='img/type_2.png'>
+									<img id='type_3' category='img' class='screen_btn' src='img/type_3.png'>
+									<img id='type_4' category='img' class='screen_btn' src='img/type_4.png'>
+									<img id='type_5' category='img' class='screen_btn' src='img/type_5.png'>
+								</div>
+							</div>
+						</div>
+						<!--------------------------------------------------------->
+						<div id='screen_4' class='screen' style='background-image: url(img/screen_3_bg.png);'>
+							<div class='screen_title'>
+								受睡伴影响程度
+							</div>
+							<div class='screen_tooltip'>
+								如打鼾、起夜、抢被子、睡眠时间不同等
+							</div>
+							<div id='partner' class='screen_btnset'>
+								<img id='partner_1' category='partner' class='screen_btn' src='img/partner_1.png'>
+								<img id='partner_2' category='partner' class='screen_btn' src='img/partner_2.png'>
+								<img id='partner_3' category='partner' class='screen_btn' src='img/partner_3.png'>
+								<img id='partner_4' category='partner' class='screen_btn' src='img/partner_4.png'>
+							</div>
+							<div class='screen_title'>
+								是否和小孩一起睡
+							</div>
+							<div id='children' class='screen_btnset'>
+								<img id='children_1' category='health' class='screen_btn' src='img/children_1.png'>
+								<img id='children_2' category='health' class='screen_btn' src='img/children_2.png'>
+							</div>
+						</div>
+						<!--------------------------------------------------------->
+						<div id='screen_5' class='screen' style='background-image: url(img/screen_3_bg.png);'>
+							<div class='screen_title'>
+								腰部健康
+							</div>
+							<div id='health' class='screen_btnset'>
+								<img id='health_1' category='health' class='screen_btn' src='img/health_1.png'>
+								<img id='health_2' category='health' class='screen_btn' src='img/health_2.png'>
+							</div>
+							<div class='screen_title'>
+								清洁程度
+							</div>
+							<div class='screen_tooltip'>
+								床垫长期放置会产生细菌、螨虫等
+							</div>
+							<div id='tidiness' class='screen_btnset'>
+								<img id='tidiness_1' category='partner' class='screen_btn' src='img/tidiness_1.png'>
+								<img id='tidiness_2' category='partner' class='screen_btn' src='img/tidiness_2.png'>
+								<img id='tidiness_3' category='partner' class='screen_btn' src='img/tidiness_3.png'>
+							</div>
+							<div class='screen_title'>
+								噪音敏感
+							</div>
+							<div id='noise' class='screen_btnset'>
+							</div>
+						</div>
+						<!--------------------------------------------------------->
+						<div id='screen_6' class='screen'>
+						</div>
+						<!--------------------------------------------------------->
+						<div id='screen_7' class='screen'>
+						</div>
+						<!--=====================================================-->
+					</div>
+				</div>
+				<!--/content -->
+				<div id='footer' data-role='footer' data-theme='c'>
+					<p>
+						&copy 2011 群核云计算
+					</p>
+				</div>
+				<!-- /footer -->
+			</div>
+		</div>
+		<!-- /page -->
+	</body>
+</html>
